@@ -1,2 +1,7 @@
-package stepDef.homepage;public class Hook {
+package stepDef.homepage;
+
+import base.config;
+
+public class Hook extends config {
 }
+
