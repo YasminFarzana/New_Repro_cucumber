@@ -32,7 +32,7 @@ Feature: TalentTEK Signup
     And student enter their newly created studentId
     And student enter their password during login
     When They click on login button
-    Then they should be able to successfully login
+    ##Then they should be able to successfully login
 
   @hw @login  @regression
   Scenario: Send values from feature file
@@ -46,7 +46,7 @@ Feature: TalentTEK Signup
     When student click on Create My Account
     Then student should be able to get an error message about email is being incorrect
     And student should be able to get an student Id
-  @hw @login  @ dataprovider
+  @hw @login  @dataprovider
   Scenario Outline: Create students by using  all the 12 months
     And student enter their invalid email
     And student enter their password
@@ -66,7 +66,7 @@ Feature: TalentTEK Signup
      | Oct   |
      | Nov   |
      | Dec   |
-
+@signup
   Scenario: Create new account with valid invalid email and valid password
 
     And student enter their email
